@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podsecrets2
+spec:
+  containers:
+    - name: con2
+      image: mysql:5.6
+      ports:
+        - containerPort: 3306
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: user-pass1
+              key: pass1

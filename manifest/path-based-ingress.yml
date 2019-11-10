@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-fanout-example
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: chiti.robo.com
+    http:
+      paths:
+      - path: /foo
+        backend:
+          serviceName: nginx-service
+          servicePort: 5000
+      - path: /bar
+        backend:
+          serviceName: apache-service
+          servicePort: 5001

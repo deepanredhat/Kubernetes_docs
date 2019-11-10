@@ -1,0 +1,8 @@
+Name: webserver1
+Description: Nginx Webserver
+apiVersion: v1
+Version: 1.0
+appVersion: 1.3
+Maintainer:
+      - name: Deepan
+        mail: deepan.redhat@gmai.com

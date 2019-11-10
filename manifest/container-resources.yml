@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+spec:
+  containers:
+  - name: db
+    image: mysql
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: "password"
+    resources:
+      requests:
+        memory: "300Mi"
+        cpu: "250m"
+      limits:
+        memory: "500Mi"
+        cpu: "500m"

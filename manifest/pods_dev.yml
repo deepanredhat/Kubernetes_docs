@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ngnix-web3
+  labels:
+    env: web
+spec:
+  containers:
+    - name: website1
+      image:  nginx:1.16
+      ports:
+        - containerPort: 80

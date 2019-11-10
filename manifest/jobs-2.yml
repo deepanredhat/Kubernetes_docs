@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: jobs-2
+spec:
+  template:
+    spec:
+      containers:
+        - name:  pi
+          image: perl
+          command: ["echo", "Hello World !!!!!"]
+      restartPolicy: Never
+  backoffLimit: 4
+  parallelism: 2
+  completions: 2

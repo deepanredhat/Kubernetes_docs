@@ -1,0 +1,6 @@
+[root@7b8eee8c797d /]# ls -lrt /tmp
+total 4
+-rw------- 1 root root   0 Dec  4  2018 yum.log
+-rwx------ 1 root root 836 Dec  4  2018 ks-script-6pKh_p
+-rw-r--r-- 1 root root   0 Jun 15 16:48 index.txt
+[root@7b8eee8c797d /]#

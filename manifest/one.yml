@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: one
+  namespace: dev
+spec:
+  containers:
+  - name: db
+    image: mysql
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: "password"
+    resources:
+      requests:
+        memory: "500Mi"
+        cpu: "250m"
+      limits:
+        memory: "600Mi"
+        cpu: "500m"

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-secret
+  namespace: default
+type: Opaque
+data:
+  service_account_key: eyBoZWxsbzogInNkZmFzZCIsCnBhc3N3b3JkOiAid2hhdCIgfQo=
+  slack_token: c2ZmcnQ2NHQ3dWs=
+  webhook_token: c2RmZGdlcnd3NGRoZ3NmNjQz
